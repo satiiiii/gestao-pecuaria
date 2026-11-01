@@ -1,0 +1,7 @@
+{
+  "id": "/", "name": "Gestão Pecuária", "short_name": "Pecuária", "lang": "pt-BR",
+  "description": "Fornecimentos por lote, com registros offline e sincronização.",
+  "start_url": "/", "scope": "/", "display": "standalone",
+  "background_color": "#F5F7F2", "theme_color": "#12382A",
+  "icons": [{ "src": "/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }]
+}

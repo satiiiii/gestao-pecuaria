@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#12382A">
+  <meta name="color-scheme" content="light dark">
+  <meta name="description" content="Gestão de fornecimentos por lote, com registros offline e sincronização.">
+  <title>Gestão Pecuária</title>
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="manifest" href="/manifest.webmanifest">
+  <link rel="stylesheet" href="/styles.css">
+  <script type="module" src="/app.mjs"></script>
+</head>
+<body>
+  <a class="skip" href="#main">Ir para o conteúdo</a>
+  <div id="auth"></div>
+  <div id="application" hidden>
+    <div class="veil" id="veil"></div>
+    <aside id="sidebar" aria-label="Navegação principal">
+      <a class="brand" href="#supplies"><span class="brandmark" data-icon="animal"></span><span class="brandtext">Gestão<span>Pecuária</span></span></a>
+      <p class="navcaption">GESTÃO DA FAZENDA</p>
+      <nav id="navigation"></nav>
+      <div class="sidebottom"><span class="statusdot"></span><div><strong id="accountLabel"></strong><span id="userLabel"></span></div></div>
+    </aside>
+    <div class="workspace">
+      <header class="topbar">
+        <div class="headerstart"><button class="iconbutton" id="toggleNav" aria-label="Abrir navegação" aria-expanded="false" data-icon="menu"></button>
+          <label class="farm-label" for="farmSelect">Fazenda<select id="farmSelect" aria-label="Fazenda em uso"></select></label></div>
+        <div class="headerend"><span class="connection" id="connection" role="status"></span><button class="iconbutton" id="theme" aria-label="Alternar tema" data-icon="moon"></button><button class="textbutton" id="logout">Sair</button></div>
+      </header>
+      <main id="main" tabindex="-1"></main>
+      <footer><span>Gestão Pecuária</span><span id="footerSync">Seus registros, com clareza.</span></footer>
+    </div>
+  </div>
+  <dialog id="modal" aria-labelledby="modalTitle"></dialog>
+  <div id="toast" role="status" aria-live="polite" hidden></div>
+  <noscript>Ative o JavaScript para usar o aplicativo e o armazenamento offline.</noscript>
+</body>
+</html>

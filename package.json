@@ -1,0 +1,13 @@
+{
+  "name": "gestao-pecuaria-mvp",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=24.0.0" },
+  "scripts": {
+    "start": "node src/server.mjs",
+    "dev": "node --watch src/server.mjs",
+    "test": "node --test test/*.test.mjs",
+    "backup": "node scripts/backup.mjs"
+  }
+}
